@@ -1,0 +1,58 @@
+# 1. Node.js 依赖与构建产物
+node_modules/
+dist/
+build/
+coverage/
+*.log
+
+# 2. 日志文件
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+debug.log
+
+# 3. 环境变量文件 (建议不要提交到仓库，防止泄露机密)
+.env*
+.env.*   # 如果有多环境 .env (比如 .env.dev, .env.test, .env.prod 等)
+
+# 4. IDE / 编辑器 配置文件
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 5. 临时文件 / 系统文件
+.DS_Store
+Thumbs.db
+*.tmp
+*.temp
+
+# 6. 其他可选忽略（根据个人或团队需求调整）
+#  - Docker 相关
+docker-compose.override.yml
+docker-compose.dev.yml
+Dockerfile.*
+.env.docker
+
+#  - TypeScript 输出（如 .js, .d.ts, sourcemap 等）
+*.js
+*.d.ts
+*.js.map
+*.d.ts.map
+
+# 如果你使用了特定的打包工具，比如 Babel/ESBuild/Webpack 的产物：
+# /lib/
+# /.babel_cache/
+
+# 如果你使用了 pm2
+.pm2/
+
+#  - Mac OS 特性
+.AppleDouble
+.LSOverride
+
+# 7. 排除掉你确实需要的文件（示例：取消忽略 .env.example）
+# !.env.example
+# !.env.sample

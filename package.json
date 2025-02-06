@@ -1,0 +1,26 @@
+{
+	"name": "auv-cms-bms-server",
+	"version": "1.0.0",
+	"description": "cms",
+	"main": "./src/main.js",
+	"type": "module",
+	"scripts": {
+		"dev": "cross-env NODE_ENV=development && nodemon ./src/main.js",
+		"router": "node ./scripts/auto-router.js"
+	},
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"nodemon": "^3.1.9"
+	},
+	"dependencies": {
+		"@koa/router": "^13.1.0",
+		"cross-env": "^7.0.3",
+		"dotenv": "^16.3.1",
+		"inquirer": "^9.2.12",
+		"koa": "^2.15.3",
+		"koa-bodyparser": "^4.4.1",
+		"koa-ejs": "^4.3.0"
+	},
+	"projectId": "356"
+}

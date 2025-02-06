@@ -1,0 +1,14 @@
+{
+  // 要监听的文件/目录
+  "watch": ["src"],
+
+  // 文件后缀: 这里假设是 JS/TS/json
+  "ext": "js,ts,json",
+
+  // 忽略的目录(通常 node_modules 和构建产物)
+  "ignore": ["node_modules", "dist", "build"],
+
+  // 当文件变化时执行的命令，这里是启动 main.js
+  // CommonJS 项目示例:
+  "exec": "node src/main.js"
+}
